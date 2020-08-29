@@ -7,6 +7,7 @@ resource "aws_ecs_task_definition" "infotek" {
   cpu = "256"
   execution_role_arn = "arn:aws:iam::848704013560:role/ecsTaskExecutionRole"
 
+  tags = var.tags
   #volume {
     #name      = "service-storage"
     #host_path = "/ecs/service-storage"
